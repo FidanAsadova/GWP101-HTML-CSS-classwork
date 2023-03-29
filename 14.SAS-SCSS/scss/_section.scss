@@ -1,0 +1,41 @@
+section {
+  height: 100vh;
+  .boxes {
+    height: 100vh;
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    .box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 200px;
+      width: 200px;
+      background-color: yellow;
+      border: 1px dashed black;
+      transition: 1s;
+      h3 {
+        display: block;
+      }
+      &:hover {
+        background-repeat: no-repeat;
+        background-size: cover;
+        transform: rotateX(360deg);
+        h3 {
+          display: none;
+        }
+      }
+    }
+    .box1:hover {
+      background-image: url(./image/minions2.jpeg);
+    }
+    .box2:hover {
+      background-image: url(./image/minions1.jpeg);
+    }
+    .box3:hover {
+      background-image: url(./image/minions3.jpeg);
+    }
+  }
+}

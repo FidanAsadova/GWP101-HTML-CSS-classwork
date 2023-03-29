@@ -1,0 +1,27 @@
+header {
+  height: 7vh;
+  background-color: black;
+  nav {
+    ul {
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        transition: 0.5s;
+        padding: 5px 14px;
+        border-radius: 8px;
+        &:hover {
+          transform: scale(1.2);
+          background-color: white;
+        }
+        &:hover a {
+          color: black;
+        }
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}

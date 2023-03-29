@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
+  background-color: cadetblue;
+  height: 50vh;
+  .academy {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+    gap: 30px;
+    ul {
+      li {
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
