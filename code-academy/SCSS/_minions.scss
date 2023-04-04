@@ -1,0 +1,42 @@
+.minions{
+    .container{
+        .row{
+            .box1:hover{
+                background-image: url(../image/minion.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: 0.7s;
+                animation-name: box;
+
+            }
+            .box2:hover{
+                background-image: url(../image/mini2.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: 0.7s;
+                animation-name: box;
+
+            }
+            .box3:hover{
+                background-image: url(../image/mini3.jpeg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                animation: 0.7s;
+                animation-name: box;
+
+            }
+        }
+    }
+}
+@keyframes box {
+    0% {
+      transform: rotateX(0deg);
+    }
+    50% {
+      transform: rotateX(90deg);
+    }
+    100%{
+        transform: rotateX(0deg);
+    }
+
+  }
