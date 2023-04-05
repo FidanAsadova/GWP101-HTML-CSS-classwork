@@ -1,42 +1,50 @@
-.minions{
-    .container{
-        .row{
-            .box1:hover{
-                background-image: url(../image/minion.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                animation: 0.7s;
-                animation-name: box;
-
-            }
-            .box2:hover{
-                background-image: url(../image/mini2.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                animation: 0.7s;
-                animation-name: box;
-
-            }
-            .box3:hover{
-                background-image: url(../image/mini3.jpeg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                animation: 0.7s;
-                animation-name: box;
-
+.minions {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .container {
+      .box {
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px dashed black;
+        &:hover{
+            animation-name: box;
+            animation-duration: 1s;
+            h3{
+                display: none;
             }
         }
-    }
-}
-@keyframes box {
-    0% {
-      transform: rotateX(0deg);
-    }
-    50% {
-      transform: rotateX(90deg);
-    }
-    100%{
-        transform: rotateX(0deg);
-    }
+        }
+        .box1:hover{
+            background-image: url(../image/minion.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .box2:hover{
+            background-image: url(../image/mini2.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .box3:hover{
+            background-image: url(../image/mini3.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+      }
 
+    }
+@keyframes box {
+  0% {
+    transform: rotateX(0deg);
   }
+  50% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0deg);
+  }
+}

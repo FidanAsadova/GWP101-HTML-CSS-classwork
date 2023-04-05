@@ -91,26 +91,41 @@ header nav ul li a img {
   color: white;
 }
 
-.minions .container .row .box1:hover {
+.minions {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.minions .container .box {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px dashed black;
+}
+.minions .container .box:hover {
+  animation-name: box;
+  animation-duration: 1s;
+}
+.minions .container .box:hover h3 {
+  display: none;
+}
+.minions .container .box1:hover {
   background-image: url(../image/minion.jpeg);
-  background-repeat: no-repeat;
   background-size: cover;
-  animation: 0.7s;
-  animation-name: box;
+  background-repeat: no-repeat;
 }
-.minions .container .row .box2:hover {
+.minions .container .box2:hover {
   background-image: url(../image/mini2.jpeg);
-  background-repeat: no-repeat;
   background-size: cover;
-  animation: 0.7s;
-  animation-name: box;
+  background-repeat: no-repeat;
 }
-.minions .container .row .box3:hover {
+.minions .container .box3:hover {
   background-image: url(../image/mini3.jpeg);
-  background-repeat: no-repeat;
   background-size: cover;
-  animation: 0.7s;
-  animation-name: box;
+  background-repeat: no-repeat;
 }
 
 @keyframes box {
