@@ -1,42 +1,38 @@
 .minions {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   .container {
-      .box {
-        height: 200px;
-        width: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border: 1px dashed black;
-        &:hover{
-            animation-name: box;
-            animation-duration: 1s;
-            h3{
-                display: none;
-            }
-        }
-        }
-        .box1:hover{
-            background-image: url(../image/minion.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .box2:hover{
-            background-image: url(../image/mini2.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
-        }
-        .box3:hover{
-            background-image: url(../image/mini3.jpeg);
-            background-size: cover;
-            background-repeat: no-repeat;
+    .box {
+    //   height: 150px;
+    //   width: 150px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px dashed black;
+      &:hover {
+        animation-name: box;
+        animation-duration: 1s;
+        h3 {
+          display: none;
         }
       }
-
     }
+    .box1:hover {
+      background-image: url(../image/minion.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .box2:hover {
+      background-image: url(../image/mini2.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    .box3:hover {
+      background-image: url(../image/mini3.jpeg);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+}
 @keyframes box {
   0% {
     transform: rotateX(0deg);

@@ -70,7 +70,27 @@ header nav ul li a img {
   align-items: center;
   border: 2px solid black;
   background-color: azure;
-  gap: 50px;
+  gap: 80px;
+}
+.contact .right .name {
+  border: 1px dashed black;
+  margin-bottom: 10px;
+  padding: 7px;
+}
+.contact .right .input-x {
+  width: 320px;
+  border: 1px dashed black;
+}
+.contact #select {
+  width: 400px;
+  border: 1px dashed black;
+}
+.contact button {
+  display: block;
+  width: 400px;
+  background-color: orangered;
+  border: transparent;
+  padding: 7px;
 }
 
 .bg-att {
@@ -93,13 +113,8 @@ header nav ul li a img {
 
 .minions {
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .minions .container .box {
-  height: 200px;
-  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
